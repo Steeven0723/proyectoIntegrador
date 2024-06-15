@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <form action="./controller/controlador.php" method="post">
+            <img src="assets/img/logo.png" alt="Logo">
+            <h1>Iniciar Sesión</h1>
+            <div class="inputbox">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" class="input" name="usuario" autocomplete="off" required>
+                <label>Usuario</label>
+            </div>
+            <div class="inputbox">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="input" name="contraseña" autocomplete="off" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="forget">
+                <a href="./views/recPassword.html">Recuperar Contraseña</a>
+            </div>
+            <input type="hidden" name="login" value="1">
+            <button type="submit" class="button">Iniciar</button>
+        </form>
+    </section>
+    
+</body>
+</html>
